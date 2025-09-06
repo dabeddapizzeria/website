@@ -151,7 +151,7 @@ const rosteriaItems = [
     name: "Mezzo pollo con patate",
     description: "Mezzo pollo arrosto servito con patate al forno",
     price: "€6.50",
-    image: "/menu/mezzo-pollo-patate.png",
+    image: "/menu/mezzo-pollo-con-patate.png",
   },
   {
     name: "Pollo classico",
@@ -163,14 +163,14 @@ const rosteriaItems = [
     name: "Cosce di pollo fritte - 4pz",
     description: "4 cosce di pollo impanate e fritte dorate",
     price: "€7.00",
-    image: "/menu/cosce-di-pollo.png",
+    image: "/menu/coscette-alette-pollo-fritte.png",
   },
 
   {
     name: "Coscette e alette di pollo fritte - 6pz",
     description: "6 pezzi misti di coscette e alette di pollo fritte",
     price: "€6.50",
-    image: "/menu/alette-di-pollo.png",
+    image: "/menu/cosce-di-pollo.png",
   },
   {
     name: "Bocconcini di pollo con patate fritte - 6pz",
