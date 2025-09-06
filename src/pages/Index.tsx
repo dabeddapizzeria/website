@@ -11,7 +11,7 @@ import { Pagination } from "swiper/modules";
 const pizzeItems = [
   {
     name: "Margherita",
-    description: "Pomodoro San Marzano, mozzarella di bufala, basilico fresco",
+    description: "Pomodoro, mozzarella di bufala, basilico fresco",
     price: "€5.00",
     image: "/menu/margherita.jpg",
   },
@@ -131,7 +131,7 @@ const pizzeItems = [
     name: "Focaccia fritta",
     description: "Focaccia fritta leggera e croccante",
     price: "€3.00",
-    image: "/menu/foccacia-fritta.jpg",
+    image: "/menu/foccacia-fritte.jpg",
   },
   {
     name: "Baby pizza",
@@ -145,13 +145,13 @@ const rosteriaItems = [
     name: "Pollo con patate",
     description: "Pollo arrosto servito con patate al forno croccanti",
     price: "€12.50",
-    image: "/menu/pollo-con-patate.webp",
+    image: "/menu/pollo-arrosto-con-patate.jpg",
   },
   {
     name: "Mezzo pollo con patate",
     description: "Mezzo pollo arrosto servito con patate al forno",
     price: "€6.50",
-    image: "/menu/mezzo-pollo.jpg",
+    image: "/menu/mezzo-pollo-patate.png",
   },
   {
     name: "Pollo classico",
@@ -163,14 +163,14 @@ const rosteriaItems = [
     name: "Cosce di pollo fritte - 4pz",
     description: "4 cosce di pollo impanate e fritte dorate",
     price: "€7.00",
-    image: "/menu/cosce-di-pollo.webp",
+    image: "/menu/cosce-di-pollo.png",
   },
 
   {
     name: "Coscette e alette di pollo fritte - 6pz",
     description: "6 pezzi misti di coscette e alette di pollo fritte",
     price: "€6.50",
-    image: "/menu/coscette-alette-pollo.webp",
+    image: "/menu/alette-di-pollo.png",
   },
   {
     name: "Bocconcini di pollo con patate fritte - 6pz",
@@ -231,23 +231,48 @@ const fastFoodItems = [
 
 const specialitaItems = [
   {
+    name: "Tacos fritto",
+    description:
+      "Carne di vitello, verza, cavolo viola, riso allo zafferano e mozarella",
+    price: "€6.00",
+    image: "/menu/tacos-fritto.png",
+  },
+  {
+    name: "verdure grigliate",
+    description: "Zucca, stracchino, salsiccia e gorgonzola",
+    price: "€4.00",
+    image: "/menu/verdure-grigliate.png",
+  },
+  {
     name: "Pizza disco volante",
     description: "Zucca, stracchino, salsiccia e gorgonzola",
     price: "€10.00",
     image: "/menu/pizza-volante.png",
   },
   {
-    name: "Tacos fritto",
-    description:
-      "Carne di vitello, verza, cavolo viola, riso allo zafferano e mozarella",
-    price: "€6.00",
-    image: "/menu/tacos.jpg",
-  },
-  {
     name: "Fagottini di pasta fillo",
     description: "Verdure saltate e carne di vitello",
     price: "€4.00",
     image: "/menu/fagottini-vegetariani.jpg",
+  },
+  {
+    name: "Patatine fritte",
+    description: "Zucca, stracchino, salsiccia e gorgonzola",
+    price: "€2.50",
+    image: "/menu/patatine-fritte.jpg",
+  },
+
+  {
+    name: "Patate al forno",
+    description: "Zucca, stracchino, salsiccia e gorgonzola",
+    price: "€3.50",
+    image: "/menu/patate-al-forno.avif",
+  },
+  {
+    name: "foccacia fritta",
+    description: "Zucca, stracchino, salsiccia e gorgonzola",
+    price: "€3.00",
+    image: "/menu/foccacia-fritte.jpg",
   },
 ];
 
@@ -392,6 +417,15 @@ const Index = () => {
         />
       </div>
 
+      <div className="bg-[#ede9e5]">
+        <MenuSection
+          id="specialita"
+          title="Specialità della Casa"
+          description="I piatti che ci rendono unici, preparati con ricette tradizionali"
+          items={specialitaItems}
+        />
+      </div>
+
       <MenuSection
         id="fastfood"
         title="Fast Food"
@@ -405,15 +439,6 @@ const Index = () => {
           title="Le Nostre Bibite"
           description="Scopri la nostra menu di bibite"
           items={daBere}
-        />
-      </div>
-
-      <div className="bg-[#ede9e5]">
-        <MenuSection
-          id="specialita"
-          title="Specialità della Casa"
-          description="I piatti che ci rendono unici, preparati con ricette tradizionali"
-          items={specialitaItems}
         />
       </div>
 
